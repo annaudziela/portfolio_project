@@ -1,0 +1,57 @@
+.intro {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  &__about {
+    width: 830px;
+    height: 300px;
+    margin-top: 72px;
+    margin: auto;
+   &::before {
+     content: url(/src/assets/img/{.svg);
+      display: block;
+      float: left;
+   }
+   &::after {
+     content: url(/src/assets/img/}.svg);
+     display: inline-block;
+     float: right;
+   }
+  }
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 240px;
+    margin-bottom: 72px;
+  }
+  &__hi {
+    padding: 12px 15px;
+    margin: 0;
+    background: $blue;
+    border-radius: 16px;
+    width: 192px;
+    height: 40px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+  }
+    &__hiStyle {
+        width: 192px;
+        height: 40px;  
+        &::after {
+            content: url(/src/assets/img/Speech_cloud.png);
+            display: block;
+            text-align: left;
+            margin-left: 25px;
+        }
+  }
+  &__image {
+    width: 178px;
+    height: 178px;
+    border-radius: 50%;
+    border: 24px solid #f6f9fd;
+  }
+}
