@@ -26,28 +26,35 @@
         <header class="intro__header">
           <img class="intro__image" src="/src/assets/img/udz-13-kopia.jpg" alt="Anna" />
           <div class="intro__hiStyle">
-          <p class="intro__hi"> Hey there!🤙</p>
-        </div>
+          <p class="intro__hi"> Hey there!<span class="intro__hi--emoji"> 👋 </span></p>
+        <div class="intro__box">
         </header>
         <article class="intro__about">
+          <img src="/src/assets/img/{.svg"></a>
+          <div>
           <h1 class="intro__title">
-            My name is Anna and I’m an aspiring Frontend developer.
+            My name is Anna and I’m an aspiring <span class="intro__title--special">Frontend developer.</span> 
           </h1>
-          <p>
-          You might be interested in checking the list of my skills. Don’t
-          forget to have a glimpse at my projects. Currently I’m looking for a
-          new challenges so if you have one - contact me 😊</p>
-          <a class="intro__link" href="mailto:annaudziela@gmail.com"
-          >annaudziela@gmail.com</a
-        >
+          <p class="intro__description">
+          You might be interested in checking the list of <a href="#mySkills" class="intro__description--special">my skills.</a>  Don’t
+          forget to have a glimpse at my <a href="#projects" class="intro__description--special">projects.</a> Currently I’m looking for a
+          new challenges so if you have one - <a href="mailto:annaudziela@gmail.com" class="intro__description--special"
+          >contact me</a> <span class="intro__description--emoji">📩</span>
+        </p>
+         
+      </div>
+        <img src="/src/assets/img/}.svg"></a>
         </article>
-        
+        <a class="intro__mail" href="mailto:annaudziela@gmail.com"
+        >annaudziela@gmail.com</a>
       </section>
-      <section class="skills">
+      <section class="skills" id="mySkills">
         <h2 class="skills__title">My skills</h2>
         <article class="list">
+          <div>
+            <span class="list__title--special">👩🏼‍💻</span>
           <h3 class="list__title">Working knowledge</h3>
-          <ul class="list__knowledge">
+          <ul class="list__element">
             <li>Semantic HTML5</li>
             <li>CSS/SASS: flexbox, grid</li>
             <li>JS: events</li>
@@ -59,10 +66,11 @@
             <li>Wordpress</li>
             
           </ul>
-        </article>
-        <article class="list">
+        </div>
+        <div>
+          <span class="list__title--special">🧐</span>
           <h3 class="list__title">Know something about</h3>
-          <ul class="list__know">
+          <ul class="list__element">
             
             <li>Webpack</li>
             <li>Import/export in CSS & JS</li>
@@ -72,10 +80,11 @@
             <li>SVG manipulations</li>
             <li>Mobile first design</li>
           </ul>
-        </article>
-        <article class="list">
+        </div>
+        <div>
+          <span class="list__title--special">📚</span>
           <h3 class="list__title">Want to learn</h3>
-          <ul class="list__learn">
+          <ul class="list__element">
             <li>React JS</li>
             <li>jQuery</li>
             <li>UI / UX</li>
@@ -84,9 +93,10 @@
             <li></li>
             <li></li>
           </ul>
+        </div>
         </article>
       </section>
-      <section class="projects">
+      <section class="projects" id="projects">
         <h2 class="projects__title">Recent projects</h2>
         <p>
           I started my frontend developer path in March 2020. Since then, I’ve
