@@ -38,7 +38,7 @@
           <p class="intro__description">
           You might be interested in checking the list of <a href="#mySkills" class="intro__description--special">my skills.</a>  Don’t
           forget to have a glimpse at my <a href="#projects" class="intro__description--special">projects.</a> Currently I’m looking for a
-          new challenges so if you have one - <a href="mailto:annaudziela@gmail.com" class="intro__description--special"
+          new challenges so if you have one - <a href="#contact" class="intro__description--special"
           >contact me</a> <span class="intro__description--emoji">📩</span>
         </p>
          
@@ -98,42 +98,51 @@
       </section>
       <section class="projects" id="projects">
         <h2 class="projects__title">Recent projects</h2>
-        <p>
+        <p class="projects__description">
           I started my frontend developer path in March 2020. Since then, I’ve
           built some projects. Here’s the list of the things I’ve done so far.
         </p>
-        <div class="projects__details">Project 1</div>
+        <article class="projects__list">
+        <div class="projects__details">Project 1
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum quibusdam rem dolor possimus, amet architecto saepe quae explicabo pariatur asperiores ex, ab quod neque. Laborum repudiandae eos nihil sed.</p>
+        </div>
+
         <div class="projects__details">Project 2</div>
         <div class="projects__details">Project 3</div>
         <div class="projects__details">Project 4</div>
+      </article>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2 class="contact__title">Contact me!</h2>
         <p class="contact__description">
-          I'm smart, learn fats and I’m open for new opportunities. If you have
+          I'm smart, learn fats and I’m open for new opportunities. </br> If you have
           one for me we should talk!
         </p>
-        <p class="contact__details">
+        <article class="contact__details">
+       <div class="contact__social">
           <a
-            class="contact__linkedin"
+            class="contact__social--linkedin"
             href="https://www.linkedin.com/in/anna-udziela-4abb6616a/"
-            >LinkedIn</a
+            ><img src="/src/assets/img/linkedin_icon.svg"></a
           >
           <a
-            class="contact__facebook"
-            href="https://www.facebook.com/anna.udziela/"
-            >Facebook</a
+            class="contact__social--facebook"
+            href="https://www.facebook.com/anna.udziela/"><img src="/src/assets/img/Facebook_icon.svg">
+            </a
           >
-          <a class="contact__github" href="https://github.com/annaudziela"
-            >GitHub</a
+          <a class="contact__social--github" href="https://github.com/annaudziela"
+            ><img src="/src/assets/img/Github_icon.svg"></a
           >
-          <a class="contact__mail" href="mailto:annaudziela@gmail.com"
+        </div>
+       <div class="contact__mail">
+          <a class="contact__mail--dec" href="mailto:annaudziela@gmail.com"
             >annaudziela@gmail.com</a
           >
-        </p>
+        </div>
+        </article>
       </section>
-      <footer>
-        <a href="#top">Take me up!👆</a>
+      <footer class="footer">
+        <a class="footer__box" href="#top">Take me up!👆</a>
       </footer>
     </main>
   </body>
