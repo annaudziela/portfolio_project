@@ -17,18 +17,14 @@
       content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
     />
 
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
   </head>
   <body>
-    <main>
-      <section class="intro" id="top">
-        <header class="intro__header">
-          <img class="intro__image" src="/src/assets/img/udz-13-kopia.jpg" alt="Anna" />
-          <div class="intro__hiStyle">
-          <p class="intro__hi"> Hey there!<span class="intro__hi--emoji"> 👋 </span></p>
-        <div class="intro__box">
-        </header>
+    <main id="top">
+      <section class="intro">
+        <div class="intro__header">
+          <img class="intro__image" src="/src/assets/img/udz-13-kopia.jpg" alt="Anna-main-photo" />
+          <span class="intro__hello-box"> Hey there!<span class="intro__hello-box--emoji"> 👋 </span></span>
+        </div> 
         <article class="intro__about">
           <img src="/src/assets/img/{.svg"></a>
           <div>
@@ -49,49 +45,47 @@
         >annaudziela@gmail.com</a>
       </section>
       <section class="skills" id="mySkills">
-        <h2 class="skills__title">My skills</h2>
-        <article class="list">
-         
-          <div class="skills__list">
-            <span class="list__title--special">👩🏼‍💻</span>
-          <h3 class="list__title">Working knowledge</h3>
-          <ul class="list__element list__element--green">
-            <li class="html">Semantic HTML5</li>
-            <li>CSS/SASS: flexbox, grid</li>
-            <li>JS: events</li>
-            <li>JS: localStorage</li>
-            <li>JS: objects</li>
-            <li>JS: arrays, loops</li>
-            <li>Git & GitHub</li>
-            <li>Figma</li>
-            <li>Wordpress</li>
+        <h2 class="skills__header">My skills</h2>
+        <article class="skills-section">
+          <div>
+            <span class="skills-section__title--special">👩🏼‍💻</span>
+          <h3 class="skills-section__title">Working knowledge</h3>
+          <ul class="skills-section__element skills-section__element--green">
+            <li class="skills-section__item">Semantic HTML5</li>
+            <li class="skills-section__item">CSS/SASS: flexbox, grid</li>
+            <li class="skills-section__item">JS: events</li>
+            <li class="skills-section__item">JS: localStorage</li>
+            <li class="skills-section__item">JS: objects</li>
+            <li class="skills-section__item">JS: arrays, loops</li>
+            <li class="skills-section__item">Git & GitHub</li>
+            <li class="skills-section__item">Figma</li>
+            <li class="skills-section__item">Wordpress</li>
             
           </ul>
         </div>
-        <div class="skills__list">
-          <span class="list__title--special">🧐</span>
-          <h3 class="list__title">Know something about</h3>
-          <ul class="list__element list__element--white">
+        <div>
+          <span class="skills-section__title--special">🧐</span>
+          <h3 class="skills-section__title">Know something about</h3>
+          <ul class="skills-section__element skills-section__element--white">
             
-            <li>Webpack</li>
-            <li>Import/export in CSS & JS</li>
-            <li>Progressive Web Apps</li>
-            <li>Postman</li>
-            <li>OpenGraph</li>
-            <li>SVG manipulations</li>
-            <li>Mobile first design</li>
+            <li class="skills-section__item">Webpack</li>
+            <li class="skills-section__item">Import/export in CSS & JS</li>
+            <li class="skills-section__item">Progressive Web Apps</li>
+            <li class="skills-section__item">Postman</li>
+            <li class="skills-section__item">OpenGraph</li>
+            <li class="skills-section__item">SVG manipulations</li>
+            <li class="skills-section__item">Mobile first design</li>
           </ul>
         </div>
-        <div class="skills__list">
-          <span class="list__title--special">📚</span>
-          <h3 class="list__title">Want to learn</h3>
-          <ul class="list__element list__element--dott">
-            <li>React JS</li>
-            <li>jQuery</li>
-            <li>UI / UX</li>
-            <li>Node JS & NPM</li>
-            <li>Gatsby</li>
-            
+        <div>
+          <span class="skills-section__title--special">📚</span>
+          <h3 class="skills-section__title">Want to learn</h3>
+          <ul class="skills-section__element skills-section__element--dott">
+            <li class="skills-section__item">React JS</li>
+            <li class="skills-section__item"> jQuery</li>
+            <li class="skills-section__item">UI / UX</li>
+            <li class="skills-section__item">Node JS & NPM</li>
+            <li class="skills-section__item">Gatsby</li>
           </ul>
         </div>
         </article>
@@ -102,20 +96,35 @@
           I started my frontend developer path in March 2020. Since then, I’ve
           built some projects. Here’s the list of the things I’ve done so far.
         </p>
-        <article class="projects__list">
-        <div class="projects__details">Project 1
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum quibusdam rem dolor possimus, amet architecto saepe quae explicabo pariatur asperiores ex, ab quod neque. Laborum repudiandae eos nihil sed.</p>
-        </div>
-
-        <div class="projects__details">Project 2</div>
-        <div class="projects__details">Project 3</div>
-        <div class="projects__details">Project 4</div>
+        <div class="projects-grid"></div>
+        <article class="project">
+        <h3 class="project__title">
+          <span>Project 1</span> <span>fetchApi</span>
+        </h3>
+          <p>
+            <span>description:</span
+              ><span>fetchApi</span>
+          </p>
+          <p>
+            <span>demo:</span
+              ><span
+              >&lt;<a href="#" title="fetchApi - demo">see_here</a
+                >&gt;</span
+                >
+          </p>
+          <p>
+            <span>github:</span>
+            <span>
+              &lt;<a href="#" title="fetchApi - repo">source_code</a>&gt;
+            </span>
+          </p>
       </article>
+    </div>
       </section>
       <section class="contact" id="contact">
         <h2 class="contact__title">Contact me!</h2>
         <p class="contact__description">
-          I'm smart, learn fats and I’m open for new opportunities. </br> If you have
+          I'm smart, learn fast and I’m open for new opportunities. </br> If you have
           one for me we should talk!
         </p>
         <article class="contact__details">
@@ -136,7 +145,7 @@
         </div>
        <div class="contact__mail">
           <a class="contact__mail--dec" href="mailto:annaudziela@gmail.com"
-            >annaudziela@gmail.com</a
+            >Let's talk!</a
           >
         </div>
         </article>

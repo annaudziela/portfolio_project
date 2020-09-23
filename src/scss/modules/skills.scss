@@ -1,12 +1,50 @@
 .skills {
   background: $blue;
-  
-  &__title {
+  &__header {
     padding-top: 80px;
     margin-bottom: 128px;
     font-size: 48px;
     line-height: 56px;
     color: #ffffff;
   }
-  
+}
+
+
+.skills-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #ffffff;
+  padding-bottom: 176px;
+  padding-left: 128px;
+  padding-right: 128px;
+
+  &__element {
+    text-align: left;
+    margin-right: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 38px;
+    list-style-type: none;
+    &--green {
+      list-style-image: url(/src/assets/img/small-tick.svg);
+    }
+    &--white {
+      list-style-image: url(/src/assets/img/white-small-tick.svg);
+    }
+    &--dott {
+      list-style-image: url(/src/assets/img/yellotw-small-tick.svg);
+    }
+  }
+  &__title {
+    font-weight: bold;
+    margin-right: 24px;
+    font-size: 24px;
+    line-height: 44px;
+    &--special {
+      font-size: 50px;
+    }
+  }
 }

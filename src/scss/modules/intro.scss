@@ -1,14 +1,29 @@
 @keyframes wave {
-  0% { transform: rotate( 0.0deg) }
- 10% { transform: rotate(14.0deg) }  
- 20% { transform: rotate(-8.0deg) }
- 30% { transform: rotate(14.0deg) }
- 40% { transform: rotate(-4.0deg) }
- 50% { transform: rotate(10.0deg) }
- 60% { transform: rotate( 0.0deg) }  
-100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-
 
 .intro {
   margin-top: 80px;
@@ -20,20 +35,29 @@
     margin: auto;
     display: flex;
   }
+  &__description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+    &--special {
+      color: $text-link2;
+      &:hover {
+        color: $text-dark;
+      }
+    }
+  }
   &__header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 235px;
     margin-bottom: 72px;
-
   }
-  &__hi {
+  &__hello-box {
     padding: 12px 15px;
     margin: 0;
     background: $blue;
     border-radius: 16px;
-    
     color: #ffffff;
     font-style: normal;
     font-weight: bold;
@@ -41,21 +65,20 @@
     line-height: 40px;
     &--emoji {
       animation-name: wave;
-      animation-duration: 2.5s;        
-      animation-iteration-count: infinite;  
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
       transform-origin: 70% 70%;
       display: inline-block;
       margin-left: 4px;
     }
   }
   &__hiStyle {
-    
-    &::after {
-      content: url(/src/assets/img/Speech_cloud.png);
-      display: block;
-      text-align: left;
-      margin-left: 25px;
-    }
+    // &::after {
+    //   content: url(/src/assets/img/Speech_cloud.png);
+    //   display: block;
+    //   text-align: left;
+    //   margin-left: 25px;
+    // }
   }
   &__image {
     width: 178px;
@@ -65,38 +88,24 @@
   }
   &__mail {
     background: $text-link2;
-border-radius: 64px;
-text-decoration: none;
-color: #ffffff;
-font-family: Nunito;
-font-style: normal;
-font-size: 20px;
-line-height: 40px;
-align-self: center;
-padding: 4px 20px;
-margin-bottom: 176px;
+    border-radius: 64px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Nunito;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 40px;
+    align-self: center;
+    padding: 4px 20px;
+    margin-top: 40px;
+    margin-bottom: 176px;
   }
   &__title {
     font-size: 32px;
-line-height: 40px;
-color: $text-dark;
-&--special {
-  color: $blue;
-}
-  }
-  &__description {
-    font-style: normal;
-font-weight: 300;
-font-size: 20px;
-line-height: 40px;
-&--special {
-  color: $text-link2;
-  &:hover {
+    line-height: 40px;
     color: $text-dark;
-  }
-}
-&--emoji {
-  transition: 20px;
-}
+    &--special {
+      color: $blue;
+    }
   }
 }

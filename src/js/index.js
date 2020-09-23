@@ -17,3 +17,4 @@ var docWidth = document.documentElement.offsetWidth;
 );
 
 console.log('HELLO 🚀')
+console.log('Hellloooo🍪'); 

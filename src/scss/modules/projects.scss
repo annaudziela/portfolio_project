@@ -1,43 +1,38 @@
-
-
 .projects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 176px;
+  &__description {
+    margin: auto;
+    margin-bottom: 128px;
+    max-width: 782px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  &__details {
+    width: 580px;
+    height: 324px;
+    background-image: url(/src/assets/img/Github_project.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &__list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 176px;
-
-    &__title {
-        padding-top: 80px;
-        margin: 0 0 40px 0;
-        font-size: 48px;
-        line-height: 56px;
-        color: $text-dark;
-      }
-
-      &__description {
-          margin: auto;
-          margin-bottom: 128px;
-        max-width: 782px;
-        font-style: normal;
-font-weight: 300;
-font-size: 20px;
-line-height: 40px;
-      }
-      &__details {
-
-        width: 580px;
-        height: 324px;
-          background-image: url(/src/assets/img/Github_project.svg);
-          background-size: contain;
-          background-repeat: no-repeat;
-      }
-      &__list {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-self: center;
-          justify-content: space-around;
-        padding: 0px;
-        margin: 0px 128px;
-      }
+    justify-self: center;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px 128px;
+  }
+  &__title {
+    padding-top: 80px;
+    margin: 0 0 40px 0;
+    font-size: 48px;
+    line-height: 56px;
+    color: $text-dark;
+  }
 }
