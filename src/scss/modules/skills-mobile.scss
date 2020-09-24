@@ -1,0 +1,50 @@
+.skills {
+  background: $blue;
+  &__header {
+    padding-top: 64px;
+  
+    margin: 0;
+    font-size: 36px;
+    line-height: 48px;
+    color: #ffffff;
+  }
+}
+
+
+.skills-section {
+  margin: 16px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+
+  &__box {
+    margin-top: 64px;
+  }
+  &__element {
+    top: 64px;
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 38px;
+    list-style-type: none;
+    &--green {
+      list-style-image: url(/src/assets/img/small-tick.svg);
+    }
+    &--white {
+      list-style-image: url(/src/assets/img/white-small-tick.svg);
+    }
+    &--dott {
+      list-style-image: url(/src/assets/img/yellotw-small-tick.svg);
+    }
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 44px;
+    &--special {
+      font-size: 64px;
+    }
+  }
+}

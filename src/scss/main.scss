@@ -1,32 +1,38 @@
 @import "~normalize.css";
 
+// @import "_variables";
+// @import "modules/contact.scss";
+// @import "modules/intro.scss";
+// @import "modules/projects.scss";
+// @import "modules/skills.scss";
+
+
 @import "_variables";
-@import "modules/contact.scss";
-@import "modules/intro.scss";
-@import "modules/projects.scss";
-@import "modules/skills.scss";
+@import "modules/contact-mobile.scss";
+@import "modules/intro-mobile.scss";
+@import "modules/projects-mobile.scss";
+@import "modules/skills-mobile.scss";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap");
 
 html {
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+// *,
+// *::before,
+// *::after {
+//   box-sizing: inherit;
+// }
 
 body {
   
-  color: black;
+  
   // display: flex;
   // max-width: 960px;
-  margin: auto;
-  width: 100vw;
+  
+
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 100vh;
   font-family: Nunito;
 }

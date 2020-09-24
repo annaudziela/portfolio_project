@@ -1,0 +1,42 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 16px;
+  &__description {
+
+    margin: 0;
+    // max-width: 782px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+  }
+  &__details {
+    width: 580px;
+    height: 324px;
+    background-image: url(/src/assets/img/Github_project.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px 128px;
+  }
+  &__title {
+  
+    margin: 64px 0 32px 0;
+    font-size: 36px;
+    line-height: 48px;
+    color: $text-dark;
+  }
+}
+
+.projects-grid {
+  margin: 46px 0 88px 0;
+}

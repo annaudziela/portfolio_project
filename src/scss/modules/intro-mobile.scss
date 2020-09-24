@@ -1,0 +1,121 @@
+// @keyframes wave {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   10% {
+//     transform: rotate(14deg);
+//   }
+//   20% {
+//     transform: rotate(-8deg);
+//   }
+//   30% {
+//     transform: rotate(14deg);
+//   }
+//   40% {
+//     transform: rotate(-4deg);
+//   }
+//   50% {
+//     transform: rotate(10deg);
+//   }
+//   60% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(0deg);
+//   }
+// }
+
+.intro {
+  // margin-left: 16px;
+  // margin-right: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  &__about {
+    max-width: 830px;
+    margin-top: 72px;
+    margin: auto;
+    display: flex;
+    &--bracket {
+      display: none;
+    }
+  }
+  &__description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    &--special {
+      color: $text-link2;
+      text-decoration: none;
+      &:hover {
+        color: $text-dark;
+      }
+    }
+  }
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 98px;
+  }
+  &__hello-box {
+    display: none;
+    padding: 12px 15px;
+    margin: 0;
+    background: $blue;
+    border-radius: 16px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    &--emoji {
+      animation-name: wave;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      transform-origin: 70% 70%;
+      display: inline-block;
+      margin-left: 4px;
+    }
+  }
+  &__hiStyle {
+    // &::after {
+    //   content: url(/src/assets/img/Speech_cloud.png);
+    //   display: block;
+    //   text-align: left;
+    //   margin-left: 25px;
+    // }
+  }
+  &__image {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 16px solid #f6f9fd;
+  }
+  &__mail {
+    background: $text-link2;
+    border-radius: 64px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Nunito;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 40px;
+    align-self: center;
+    padding: 4px 20px;
+    margin-top: 52px;
+    margin-bottom: 88px;
+  }
+  &__title {
+    font-size: 26px;
+    line-height: 32px;
+    color: $text-dark;
+    margin-bottom: 16px;
+    margin-top: 0;
+    &--special {
+      color: $blue;
+    }
+  }
+}

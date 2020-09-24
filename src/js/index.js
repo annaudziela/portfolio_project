@@ -1,5 +1,6 @@
 import '../scss/main.scss';
 
+
 // uncomment the lines below to enable PWA
 // import {registerSW} from './pwa.js';
 // registerSW();
@@ -17,4 +18,3 @@ var docWidth = document.documentElement.offsetWidth;
 );
 
 console.log('HELLO 🚀')
-console.log('Hellloooo🍪'); 
