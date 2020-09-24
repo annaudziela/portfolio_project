@@ -13,16 +13,16 @@
 @import "modules/projects-mobile.scss";
 @import "modules/skills-mobile.scss";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
 html {
   box-sizing: border-box;
 }
 
-// *,
-// *::before,
-// *::after {
-//   box-sizing: inherit;
-// }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
   

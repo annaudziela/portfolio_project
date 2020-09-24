@@ -26,16 +26,12 @@
 // }
 
 .intro {
-  // margin-left: 16px;
-  // margin-right: 16px;
   padding: 16px;
   display: flex;
   flex-direction: column;
   &__about {
-    max-width: 830px;
-    margin-top: 72px;
-    margin: auto;
-    display: flex;
+    // margin-top: 72px;
+    // margin: auto;
     &--bracket {
       display: none;
     }
@@ -48,14 +44,15 @@
     &--special {
       color: $text-link2;
       text-decoration: none;
+      font-weight: bold;
       &:hover {
         color: $text-dark;
       }
     }
   }
   &__header {
-    display: flex;
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
     justify-content: center;
     margin-bottom: 40px;
     margin-top: 98px;
@@ -80,31 +77,23 @@
       margin-left: 4px;
     }
   }
-  &__hiStyle {
-    // &::after {
-    //   content: url(/src/assets/img/Speech_cloud.png);
-    //   display: block;
-    //   text-align: left;
-    //   margin-left: 25px;
-    // }
-  }
   &__image {
     width: 96px;
     height: 96px;
     border-radius: 50%;
     border: 16px solid #f6f9fd;
+    box-sizing: content-box;
   }
   &__mail {
     background: $text-link2;
     border-radius: 64px;
     text-decoration: none;
     color: #ffffff;
-    font-family: Nunito;
-    font-style: normal;
     font-size: 20px;
     line-height: 40px;
+    display: inline-block;
     align-self: center;
-    padding: 4px 20px;
+    padding: 4px 24px;
     margin-top: 52px;
     margin-bottom: 88px;
   }
