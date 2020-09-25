@@ -28,8 +28,8 @@
         <article class="intro__about">
           <img class="intro__about--bracket" src="../assets/img/{.svg" alt="bracket-decoration">
           <div>
-          <h1 class="intro__title">
-            My name is Anna. I’m an aspiring <span class="intro__title--special">Frontend developer</span> and explorer of the <span class="intro__title--special">UX Design</span>.
+          <h1 class="intro__about--title">
+            My name is Anna. I’m an aspiring <span class="intro__about--special">Frontend developer</span> and explorer of the <span class="intro__title--special">UX Design</span>.
           </h1>
           <p class="intro__description">
           You might be interested in checking the list of <a href="#mySkills" class="intro__description--special">my skills.</a>  Don’t
@@ -43,12 +43,13 @@
         </article>
         <a class="intro__mail" href="mailto:annaudziela@gmail.com"
         >annaudziela@gmail.com</a>
+        
       </section>
       <section class="skills" id="mySkills">
         <h2 class="skills__header">My skills</h2>
         <article class="skills-section">
           <div class="skills-section__box">
-            <span class="skills-section__title--special">👩🏼‍💻</span>
+            <span class="skills-section__title--emoji">👩🏼‍💻</span>
           <h3 class="skills-section__title">Working knowledge</h3>
           <ul class="skills-section__element skills-section__element--green">
             <li class="skills-section__item">Semantic HTML5</li>
@@ -64,7 +65,7 @@
           </ul>
         </div>
         <div class="skills-section__box">
-          <span class="skills-section__title--special">🧐</span>
+          <span class="skills-section__title--emoji">🧐</span>
           <h3 class="skills-section__title">Know something about</h3>
           <ul class="skills-section__element skills-section__element--white">
             
@@ -78,9 +79,9 @@
           </ul>
         </div>
         <div class="skills-section__box">
-          <span class="skills-section__title--special">📚</span>
+          <span class="skills-section__title--emoji">📚</span>
           <h3 class="skills-section__title">Want to learn</h3>
-          <ul class="skills-section__element skills-section__element--dott">
+          <ul class="skills-section__element skills-section__element--yellow">
             <li class="skills-section__item">React JS</li>
             <li class="skills-section__item"> jQuery</li>
             <li class="skills-section__item">UI / UX</li>
@@ -98,26 +99,34 @@
         </p>
         <div class="projects-grid">
         <article class="project">
-        <h3 class="project__title">
-          <span>Project 1</span> <span>fetchApi</span>
+          <div class="project__beam">
+            <div class="project__dot"></div>
+            <div class="project__dot"></div>
+            <div class="project__dot"></div>
+          </div>
+          <div class="project__content">
+            <img class="project__image" src="../assets/img/Github Icon Big.svg">
+        <h3 class="project__grid project__title">
+          <span class="project__label">project:</span> <span class="project__title--special">fetchApi</span>
         </h3>
-          <p>
-            <span>description:</span
+          <p class="project__grid">
+            <span class="project__label">description:</span
               ><span>fetchApi</span>
           </p>
-          <p>
-            <span>demo:</span
+          <p class="project__grid">
+            <span class="project__label">demo:</span
               ><span
-              >&lt;<a href="#" title="fetchApi - demo">see_here</a
+              >&lt;<a class="project__link" href="#" title="fetchApi - demo">see_here</a
                 >&gt;</span
                 >
           </p>
-          <p>
-            <span>github:</span>
+          <p class="project__grid">
+            <span class="project__label">github:</span>
             <span>
-              &lt;<a href="#" title="fetchApi - repo">source_code</a>&gt;
+              &lt;<a class="project__link" href="#" title="fetchApi - repo">source_code</a>&gt;
             </span>
           </p>
+        </div>
       </article>
     </div>
       </section>

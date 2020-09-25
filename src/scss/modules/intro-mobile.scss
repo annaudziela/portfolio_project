@@ -26,7 +26,7 @@
 // }
 
 .intro {
-  padding: 16px;
+  padding: 16px 16px 88px 16px;
   display: flex;
   flex-direction: column;
   &__about {
@@ -34,6 +34,16 @@
     // margin: auto;
     &--bracket {
       display: none;
+    }
+    &--special {
+      color: $blue;
+    }
+    &--title {
+      font-size: 26px;
+      line-height: 32px;
+      color: $text-dark;
+      margin-bottom: 16px;
+      margin-top: 0;
     }
   }
   &__description {
@@ -51,9 +61,6 @@
     }
   }
   &__header {
-    // display: flex;
-    // flex-direction: row;
-    justify-content: center;
     margin-bottom: 40px;
     margin-top: 98px;
   }
@@ -95,16 +102,5 @@
     align-self: center;
     padding: 4px 24px;
     margin-top: 52px;
-    margin-bottom: 88px;
-  }
-  &__title {
-    font-size: 26px;
-    line-height: 32px;
-    color: $text-dark;
-    margin-bottom: 16px;
-    margin-top: 0;
-    &--special {
-      color: $blue;
-    }
   }
 }
