@@ -1,39 +1,44 @@
-// @keyframes wave {
-//   0% {
-//     transform: rotate(0deg);
-//   }
-//   10% {
-//     transform: rotate(14deg);
-//   }
-//   20% {
-//     transform: rotate(-8deg);
-//   }
-//   30% {
-//     transform: rotate(14deg);
-//   }
-//   40% {
-//     transform: rotate(-4deg);
-//   }
-//   50% {
-//     transform: rotate(10deg);
-//   }
-//   60% {
-//     transform: rotate(0deg);
-//   }
-//   100% {
-//     transform: rotate(0deg);
-//   }
-// }
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 .intro {
   padding: 16px 16px 88px 16px;
-  display: flex;
-  flex-direction: column;
+  @media (min-width: $tablet) {
+    max-width: 982px;
+    margin: 0 auto;
+  }
+  
   &__about {
-    // margin-top: 72px;
-    // margin: auto;
+    display: flex;
+
     &--bracket {
-      display: none;
+      @media (max-width: $tablet) {
+        display: none;
+      }
     }
     &--special {
       color: $blue;
@@ -44,13 +49,25 @@
       color: $text-dark;
       margin-bottom: 16px;
       margin-top: 0;
+      @media (min-width: $tablet) {
+        font-size: 32px;
+        line-height: 40px;
+        padding-top: 26px;
+      }
     }
+  }
+  &__bubble {
+    position: absolute;
   }
   &__description {
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 32px;
+    @media (min-width: 817px) {
+      font-size: 20px;
+      line-height: 40px;
+    }
     &--special {
       color: $text-link2;
       text-decoration: none;
@@ -66,15 +83,31 @@
   }
   &__hello-box {
     display: none;
-    padding: 12px 15px;
-    margin: 0;
-    background: $blue;
-    border-radius: 16px;
-    color: #ffffff;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 40px;
+    @media (min-width: $desktop) {
+      display: inline-block;
+      position: relative;
+      padding: 12px 15px;
+      margin: 0;
+      background: $blue;
+      border-radius: 16px;
+      bottom: 20px;
+      color: #ffffff;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 40px;
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 18px;
+        height: 23px;
+        top: 100%;
+        left: 32px;
+        background: url("../assets/img/Speech_cloud.png");
+      }
+    }
+
     &--emoji {
       animation-name: wave;
       animation-duration: 2.5s;
@@ -89,7 +122,15 @@
     height: 96px;
     border-radius: 50%;
     border: 16px solid #f6f9fd;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    @media (min-width: $tablet) {
+      width: 178px;
+      height: 178px;
+      border-radius: 50%;
+      border: 24px solid #f6f9fd;
+      box-sizing: border-box;
+      position: relative;
+    }
   }
   &__mail {
     background: $text-link2;

@@ -1,22 +1,16 @@
 .contact {
   padding: 64px 16px 88px 16px;
   background: #dbeaf7;
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    
+  }
   &__description {
-    // max-width: 782px;
+   
     margin-bottom: 56px;
     font-weight: 300;
     font-size: 16px;
     line-height: 32px;
-  }
-  &__details {
-    // margin-bottom: 88px;
-    // height: 48px;
-    // max-width: 652px;
-    // text-decoration: none;
-    // display: flex;
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    // justify-content: space-around;
   }
   &__mail {
     background: $text-link2;
@@ -37,14 +31,7 @@
   &__social {
     display: flex;
     justify-content: center;
-    &--facebook {
-      text-decoration: none;
-      margin: 0 12px;
-    }
-    &--github {
-      margin: 0 12px;
-    }
-    &--linkedin {
+    &--item {
       text-decoration: none;
       margin: 0 12px;
     }
