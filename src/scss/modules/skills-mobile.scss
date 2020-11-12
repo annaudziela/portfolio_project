@@ -6,11 +6,24 @@
     margin: 0;
     font-size: 36px;
     line-height: 48px;
+    @media (min-width: $tablet) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+
+  &__column {
+   
   }
 }
 .skills-section {
-  // display: flex;
-  // flex-direction: column;
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1184px;
+    margin: auto;
+  }
+ 
   &__box {
     margin-top: 64px;
   }
@@ -34,6 +47,7 @@
       list-style-image: url(../assets/img/yellotw-small-tick.svg);
     }
   }
+
   &__item {
     padding-left: 12px;
   }

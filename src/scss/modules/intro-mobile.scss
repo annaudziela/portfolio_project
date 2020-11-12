@@ -83,7 +83,7 @@
   }
   &__hello-box {
     display: none;
-    @media (min-width: $desktop) {
+    @media (min-width: $tablet) {
       display: inline-block;
       position: relative;
       padding: 12px 15px;
@@ -100,11 +100,11 @@
         content: "";
         position: absolute;
         display: block;
-        width: 18px;
-        height: 23px;
-        top: 100%;
+        width: 17.42px;
+        height: 22.66px;
+        top: 99%;
         left: 32px;
-        background: url("../assets/img/Speech_cloud.png");
+        background: url("../assets/img/Speech_cloud.svg");
       }
     }
 
@@ -121,13 +121,13 @@
     width: 96px;
     height: 96px;
     border-radius: 50%;
-    border: 16px solid #f6f9fd;
+    border: 14px solid #f6f9fd;
     box-sizing: border-box;
     @media (min-width: $tablet) {
       width: 178px;
       height: 178px;
       border-radius: 50%;
-      border: 24px solid #f6f9fd;
+      border: 20px solid #f6f9fd;
       box-sizing: border-box;
       position: relative;
     }
