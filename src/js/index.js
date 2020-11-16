@@ -1,20 +1,24 @@
 import '../scss/main.scss';
 
 
-// uncomment the lines below to enable PWA
-// import {registerSW} from './pwa.js';
-// registerSW();
+const name = 'Ania';
+console.log(name);
 
-/* place your code below */
+// fetch('https://api.github.com/users/annaudziela/repos?sort=created&direction=asc')
+// .then(resp => resp.json())
+// .then(resp => {
+//     for (let repo of resp) {
+//     const {name, html_url} = repo;
+//     const repositoryList = document.querySelector('.project__link--js');
+//     const myTemplate = `<li>
+//     ${name} || <a href="${html_url}"> >see_here</a
+//     >&gt; </a>
+//     </li>`;
+//     repositoryList.innerHTML += myTemplate;
+// }
+// })
+// .catch(error => {
+//     console.log('Error: unable to download repos');
+// })
 
-var docWidth = document.documentElement.offsetWidth;
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
 
-console.log('HELLO 🚀')
