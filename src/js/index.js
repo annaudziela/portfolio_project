@@ -1,5 +1,6 @@
 import '../scss/main.scss';
 
+console.log("Hi, I'm Ania and I'm I am really happy that you visit my portfolio 🙌🏻");
 
 fetch('https://api.github.com/users/annaudziela/repos?sort=created&direction=asc')
 .then((res) => res.json())
@@ -14,7 +15,7 @@ const template = ` <article class="project">
   <div class="project__dot"></div>
 </div>
 <div class="project__content">
-  <img class="project__image" src="public/img/Github Icon Big.svg">
+  <img class="project__image" src="img/Github Icon Big.svg">
 <h3 class="project__grid project__title">
 <span class="project__label">project:</span> <span class="project__title--special">${name}</span>
 </h3>
@@ -25,7 +26,10 @@ const template = ` <article class="project">
 <p class="project__grid project__grid--special">
   <span class="project__label">demo:</span
     ><span
-    >&lt;<a class="project__link" 
+    >&lt;<a
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="project__link" 
     href="${homepage}" 
     title="${name}">see_here</a
       >&gt;</span
@@ -34,16 +38,20 @@ const template = ` <article class="project">
 <p class="project__grid">
   <span class="project__label">github:</span>
   <span>
-    &lt;<a class="project__link" 
+    &lt;<a
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="project__link" 
     href="${html_url}" 
     title="${name}">source_code</a>&gt;
   </span>
 </p>
 </div>
 </article> `;
+if (description) {
 
 gridBox.innerHTML += template;
-
+}
   }
 })
 .catch((e) => console.log(e));

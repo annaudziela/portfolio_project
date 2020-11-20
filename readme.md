@@ -1,14 +1,18 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://annaudziela.github.io/og-portfolio.png)
 
-# WTF Webpack Starter Kit 
+# Anna Udziela - JUNIOR FRONT END DEVELOPER
 
-Simple toolkit for your static websites development.
+Hi! Please take a look at my simple portfolio website.
 
-## How to use it?
+## What next?
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+Just `contact me` or leave`your feedback`.
 
-## Available scripts
+## TOOLS
+- HTML + CSS + JS
+- GitHub Api
+
+### Available scripts
 
 `npm run start` - runs development mode
 
