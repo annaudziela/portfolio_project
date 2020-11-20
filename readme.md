@@ -1,4 +1,4 @@
-![cover](https://annaudziela.github.io/og-portfolio.png)
+![cover](https://annaudziela.github.io/portfolio-project/og-portfolio.png)
 
 # Anna Udziela - JUNIOR FRONT END DEVELOPER
 
