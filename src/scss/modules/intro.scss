@@ -26,43 +26,89 @@
 }
 
 .intro {
-  margin-top: 80px;
-  display: flex;
-  flex-direction: column;
+  padding: 16px 16px 88px 16px;
+  @media (min-width: $tablet) {
+    max-width: 982px;
+    padding: 16px 16px 176px 16px;
+    margin: 0 auto;
+  }
+  
   &__about {
-    max-width: 830px;
-    margin-top: 72px;
-    margin: auto;
     display: flex;
+
+    &--bracket {
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+    &--special {
+      color: $blue;
+    }
+    &--title {
+      font-size: 26px;
+      line-height: 32px;
+      color: $text-dark;
+      margin-bottom: 16px;
+      margin-top: 0;
+      @media (min-width: $tablet) {
+        font-size: 32px;
+        line-height: 40px;
+        padding-top: 26px;
+      }
+    }
+  }
+  &__bubble {
+    position: absolute;
   }
   &__description {
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 16px;
+    line-height: 32px;
+    @media (min-width: 817px) {
+      font-size: 20px;
+      line-height: 40px;
+    }
     &--special {
       color: $text-link2;
+      text-decoration: none;
+      font-weight: bold;
       &:hover {
         color: $text-dark;
       }
     }
   }
   &__header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 72px;
+    margin-bottom: 40px;
+    margin-top: 98px;
   }
   &__hello-box {
-    padding: 12px 15px;
-    margin: 0;
-    background: $blue;
-    border-radius: 16px;
-    color: #ffffff;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 40px;
+    display: none;
+    @media (min-width: $tablet) {
+      display: inline-block;
+      position: relative;
+      padding: 12px 15px;
+      margin: 0;
+      background: $blue;
+      border-radius: 16px;
+      bottom: 20px;
+      color: #ffffff;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 40px;
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 17.42px;
+        height: 22.66px;
+        top: 99%;
+        left: 32px;
+        background: url("../assets/img/Speech_cloud.svg");
+      }
+    }
+
     &--emoji {
       animation-name: wave;
       animation-duration: 2.5s;
@@ -72,40 +118,31 @@
       margin-left: 4px;
     }
   }
-  &__hiStyle {
-    // &::after {
-    //   content: url(/src/assets/img/Speech_cloud.png);
-    //   display: block;
-    //   text-align: left;
-    //   margin-left: 25px;
-    // }
-  }
   &__image {
-    width: 178px;
-    height: 178px;
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
-    border: 24px solid #f6f9fd;
+    border: 14px solid #f6f9fd;
+    box-sizing: border-box;
+    @media (min-width: $tablet) {
+      width: 178px;
+      height: 178px;
+      border-radius: 50%;
+      border: 20px solid #f6f9fd;
+      box-sizing: border-box;
+      position: relative;
+    }
   }
   &__mail {
     background: $text-link2;
     border-radius: 64px;
     text-decoration: none;
     color: #ffffff;
-    font-family: Nunito;
-    font-style: normal;
     font-size: 20px;
     line-height: 40px;
+    display: inline-block;
     align-self: center;
-    padding: 4px 20px;
-    margin-top: 40px;
-    margin-bottom: 176px;
-  }
-  &__title {
-    font-size: 32px;
-    line-height: 40px;
-    color: $text-dark;
-    &--special {
-      color: $blue;
-    }
+    padding: 4px 24px;
+    margin-top: 52px;
   }
 }

@@ -1,69 +1,69 @@
 .contact {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  padding: 64px 16px 88px 16px;
   background: #dbeaf7;
-  &__description {
-    max-width: 782px;
-    margin: auto;
-    margin-bottom: 128px;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 40px;
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    
   }
-
-  &__details {
-    margin: auto;
-    margin-bottom: 176px;
-    height: 48px;
-    max-width: 652px;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  &__description {
+   
+    margin-bottom: 56px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 40px;
+    }
   }
   &__mail {
     background: $text-link2;
     border-radius: 64px;
-    font-family: Nunito;
     font-style: normal;
     font-size: 20px;
     line-height: 40px;
     align-self: center;
+    display: inline-block;
     padding: 4px 20px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 10px;
+    margin-top: 64px;
+    @media (min-width: $desktop) {
+      margin: 0 0 0 40px;
+    }
 
     &--dec {
       text-decoration: none;
       color: #ffffff;
     }
   }
-  &__social {
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 10px;
-    &--facebook {
-      text-decoration: none;
-      margin-right: 24px;
-    }
-    &--linkedin {
-      text-decoration: none;
-      margin-right: 24px;
-    }
-  }
+  &__links {
+    @media (min-width: $desktop) {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    max-width: 580px;
 
+  }
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+    &--item {
+      text-decoration: none;
+      margin: 0 12px;
+    }
+
+  }
   &__title {
-    padding-top: 80px;
-    margin: 0 0 40px 0;
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 36px;
+    line-height: 48px;
     color: $text-dark;
+    @media (min-width: $tablet) {
+      font-size: 48px;
+      line-height: 56px;
+    }
   }
 }
-
 .footer {
   background: #dbeaf7;
   padding: 24px;
@@ -71,13 +71,11 @@
   &__box {
     background: $text-link2;
     border-radius: 64px;
-    font-family: Nunito;
-    font-style: normal;
     font-size: 20px;
     line-height: 40px;
     color: #ffffff;
     text-decoration: none;
-    align-self: center;
+    display: inline-block;
     padding: 4px 20px;
     margin: 24px;
   }

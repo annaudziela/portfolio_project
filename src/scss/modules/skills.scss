@@ -1,50 +1,69 @@
 .skills {
   background: $blue;
+  padding: 64px 16px 88px 16px;
+  color: #fff;
   &__header {
-    padding-top: 80px;
-    margin-bottom: 128px;
-    font-size: 48px;
-    line-height: 56px;
-    color: #ffffff;
+    margin: 0;
+    font-size: 36px;
+    line-height: 48px;
+    @media (min-width: $tablet) {
+      font-size: 48px;
+      line-height: 56px;
+      padding-top: 60px;
+    }
+  }
+
+  &__column {
+   
   }
 }
-
-
 .skills-section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  color: #ffffff;
-  padding-bottom: 176px;
-  padding-left: 128px;
-  padding-right: 128px;
-
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1184px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+ 
+  &__box {
+    margin-top: 64px;
+  }
   &__element {
     text-align: left;
-    margin-right: 24px;
     font-style: normal;
-    font-weight: normal;
+    width: 288px;
+    margin: 0 auto;
+    color: $lightblue;
     font-size: 16px;
     line-height: 38px;
     list-style-type: none;
+
     &--green {
-      list-style-image: url(/src/assets/img/small-tick.svg);
+      list-style-image: url(../assets/img/small-tick.svg);
     }
     &--white {
-      list-style-image: url(/src/assets/img/white-small-tick.svg);
+      list-style-image: url(../assets/img/white-small-tick.svg);
     }
-    &--dott {
-      list-style-image: url(/src/assets/img/yellotw-small-tick.svg);
+    &--yellow {
+      list-style-image: url(../assets/img/yellotw-small-tick.svg);
+    }
+  }
+
+  &__item {
+    padding-left: 12px;
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 40px;
     }
   }
   &__title {
     font-weight: bold;
-    margin-right: 24px;
     font-size: 24px;
     line-height: 44px;
-    &--special {
-      font-size: 50px;
+    &--emoji {
+      font-size: 64px;
     }
   }
 }
