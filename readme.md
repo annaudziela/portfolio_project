@@ -1,14 +1,14 @@
 ![cover](/src/assets/img/og_portfolio2.png)
 
-# Anna Udziela - JUNIOR FRONT END DEVELOPER
+# Anna Udziela | Junior frontend developer
 
 Hi! Please take a look at my simple portfolio website.
 
 ## What next?
 
-Just <a href = "https://www.linkedin.com/in/anna-udziela-4abb6616a/">`contact me`</a>, let's talk or simply leave`your feedback`. 🙌🏻
+Just <a href = "https://www.linkedin.com/in/anna-udziela-4abb6616a/">`contact me`</a> - let's talk or simply leave your feedback. 🙌🏻
 
-## TOOLS
+## Tools
 - HTML + CSS + JS
 - GitHub Api
 
