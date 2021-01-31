@@ -3,10 +3,9 @@
   background: #dbeaf7;
   @media (min-width: $tablet) {
     margin: 0 auto;
-    
   }
+
   &__description {
-   
     margin-bottom: 56px;
     font-weight: 300;
     font-size: 16px;
@@ -15,9 +14,9 @@
     @media (min-width: $tablet) {
       font-size: 20px;
       line-height: 40px;
-     
     }
   }
+
   &__mail {
     background: $text-link2;
     border-radius: 64px;
@@ -39,23 +38,24 @@
   }
   &__links {
     @media (min-width: $desktop) {
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    max-width: 580px;
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      max-width: 580px;
+    }
+  }
 
-  }
-  }
   &__social {
     display: flex;
     justify-content: center;
+
     &--item {
       text-decoration: none;
       margin: 0 12px;
     }
-
   }
+
   &__title {
     font-size: 36px;
     line-height: 48px;
@@ -66,6 +66,7 @@
     }
   }
 }
+
 .footer {
   background: #dbeaf7;
   padding: 24px;

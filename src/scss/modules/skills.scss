@@ -1,7 +1,8 @@
 .skills {
-  background: #135CA1;
+  background: #135ca1;
   padding: 64px 16px 88px 16px;
   color: #fff;
+
   &__header {
     margin: 0;
     font-size: 36px;
@@ -12,8 +13,8 @@
       padding-top: 60px;
     }
   }
-
 }
+
 .skills-section {
   @media (min-width: $desktop) {
     display: grid;
@@ -23,10 +24,11 @@
     margin-top: 60px;
     margin-bottom: 60px;
   }
- 
+
   &__box {
     margin-top: 64px;
   }
+
   &__element {
     text-align: left;
     font-style: normal;
@@ -40,9 +42,11 @@
     &--green {
       list-style-image: url(../assets/img/small-tick.svg);
     }
+
     &--white {
       list-style-image: url(../assets/img/white-small-tick.svg);
     }
+
     &--yellow {
       list-style-image: url(../assets/img/yellotw-small-tick.svg);
     }
@@ -55,6 +59,7 @@
       line-height: 36px;
     }
   }
+
   &__title {
     font-weight: bold;
     font-size: 24px;

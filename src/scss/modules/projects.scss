@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   align-content: center;
   padding: 64px 16px 88px 16px;
+
   &__description {
     margin: 0;
     font-weight: 300;
@@ -17,12 +18,14 @@
       line-height: 40px;
     }
   }
+
   &__details {
     height: 324px;
     background-image: url(../assets/img/Github_project.svg);
     background-size: contain;
     background-repeat: no-repeat;
   }
+
   &__list {
     display: flex;
     flex-direction: row;
@@ -32,6 +35,7 @@
     padding: 0px;
     margin: 0px 128px;
   }
+
   &__title {
     font-size: 36px;
     line-height: 48px;
@@ -44,6 +48,7 @@
     }
   }
 }
+
 .projects-grid {
   margin: 46px 0 0;
   display: grid;
@@ -55,6 +60,7 @@
     margin: 120px 0 60px 0;
   }
 }
+
 .project {
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
@@ -67,7 +73,6 @@
   min-width: 288px;
   max-width: 500px;
   height: 370px;
-
   &:hover {
     background: $console1;
   }
@@ -79,6 +84,7 @@
     display: flex;
     padding: 16px;
   }
+
   &__content {
     padding: 10px 16px;
     text-align: left;
@@ -87,12 +93,12 @@
     font-size: 12px;
     font-weight: normal;
     line-height: 24px;
-
     @media (min-width: $tablet) {
       font-size: 16px;
       margin: 20px;
     }
   }
+
   &__dot {
     background: $lightblue;
     width: 8px;
@@ -101,34 +107,38 @@
     display: block;
     margin-right: 8px;
   }
+
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 8px;
+
     &--special {
       margin-top: 10px;
       @media (min-width: $tablet) {
         margin-top: 25px;
       }
     }
-    
   }
+
   &__label {
     display: block;
     text-align: right;
     @media (min-width: $tablet) {
       font-size: 16px;
-      
     }
   }
+
   &__link {
     color: $text-link;
   }
+
   &__title {
     font-size: 12px;
     line-height: 24px;
     font-style: normal;
     font-weight: normal;
+
     &--special {
       color: #fff;
       font-weight: bold;

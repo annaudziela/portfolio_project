@@ -32,7 +32,7 @@
     padding: 16px 16px 176px 16px;
     margin: 0 auto;
   }
-  
+
   &__about {
     display: flex;
 
@@ -41,9 +41,11 @@
         display: none;
       }
     }
+
     &--special {
       color: $blue;
     }
+
     &--title {
       font-size: 26px;
       line-height: 32px;
@@ -57,9 +59,11 @@
       }
     }
   }
+
   &__bubble {
     position: absolute;
   }
+
   &__description {
     font-style: normal;
     font-weight: 300;
@@ -70,6 +74,7 @@
       font-size: 20px;
       line-height: 40px;
     }
+
     &--special {
       color: $text-link2;
       text-decoration: none;
@@ -79,10 +84,12 @@
       }
     }
   }
+
   &__header {
     margin-bottom: 40px;
     margin-top: 98px;
   }
+
   &__hello-box {
     display: none;
     @media (min-width: $tablet) {
@@ -119,6 +126,7 @@
       margin-left: 4px;
     }
   }
+
   &__image {
     width: 96px;
     height: 96px;
@@ -134,6 +142,7 @@
       position: relative;
     }
   }
+
   &__mail {
     background: $text-link2;
     border-radius: 64px;
