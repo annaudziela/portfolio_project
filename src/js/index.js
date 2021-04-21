@@ -7,6 +7,8 @@ fetch('https://api.github.com/users/annaudziela/repos?sort=created&direction=asc
 .then((res) => res.json())
 .then((res) => {
   const gridBox = document.querySelector('.projects-grid--js');
+console.log(res);
+
   for (let repo of res) {
     const {description, homepage, html_url, name} = repo;
 const template = ` <article class="project">
